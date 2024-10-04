@@ -24,7 +24,7 @@ a{
 header {
     position: fixed;
     top: 0;
-    z-index: 1400;
+    z-index: 1000;
     width: 100%;
     height: 4.4rem;
     background-color: rgba(0,0,0,.8);
@@ -41,6 +41,13 @@ header {
 }
 
 .nav-list-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-list-larger {
     display: none;
 }
 
@@ -57,7 +64,7 @@ header {
 }
 
 .about-me{
-    height: 160.2rem;
+    height: 150.2rem;
     margin-top: 4.4rem;
     background: url("/Users/jayrajesh/Library/Mobile Documents/com~apple~CloudDocs/Michigan.jpg");
     background-repeat: repeat;
@@ -109,4 +116,75 @@ header {
 
 .cta-link:hover {
     border-bottom: 2px solid #66bbff;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-list-larger {
+        display: none; /* Hide larger nav items on small screens */
+    }
+
+    /* Mobile menu should always be visible */
+    .nav-list-mobile {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-list-mobile {
+        display: none;
+    }
+
+    .nav-list-larger {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-item {
+        padding: 0 1.5rem;
+    }
+    .mobile-menu {
+        position: relative;
+        z-index: 1500;
+        width: 3rem;
+        height: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .line {
+        width: 100%;
+    height: 3px; /* Make lines thicker for visibility */
+    background-color: #fff;
+    margin: 4px 0; /* Create spacing between the lines */
+    transition: all 0.3s ease; /* Smoother transition */
+    }
+    .line-top {
+        margin-top: 3px;
+    }
+    .line-bottom{
+        margin-top: -4rem;
+    }
+}
+
+.menu-active .nav-list-larger {
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    top: 4.4rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 0;
+}
+
+.menu-active .nav-item {
+    padding: 1rem;
+    text-align: center;
+}
+
+body {
+    padding-top: 4.4rem; /* Ensure content is pushed down to make space for the fixed header */
 }
