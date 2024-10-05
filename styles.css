@@ -54,8 +54,7 @@ header {
 .nav-link {
     font-size: 1.4rem;
     color: #FCF5E5;
-    padding: 0 2rem;
-    line-height: 4.4rem;
+    padding: 0 1rem;
     transition: opacity .5s;
 }
 
@@ -120,26 +119,12 @@ header {
 
 @media screen and (max-width: 767px) {
     .nav-list-larger {
-        display: none; /* Hide larger nav items on small screens */
+        display: none; 
     }
 
-    /* Mobile menu should always be visible */
     .nav-list-mobile {
         display: flex;
     }
-}
-
-@media screen and (min-width: 768px) {
-    .nav-list-mobile {
-        display: none;
-    }
-
-    .nav-list-larger {
-        display: flex; 
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .nav-item {
         padding: 0 1.5rem;
     }
