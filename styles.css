@@ -7,6 +7,14 @@
 
 }
 
+body {
+    background: linear-gradient(180deg, #e0e0e0, #f5f5f7);
+    color: #1d1d1f;
+    font-family: 'SF Pro Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 html{
     font-size: 10px;
     font-family: 'SF Pro Display', sans-serif;
@@ -27,7 +35,7 @@ header {
     top: 0;
     z-index: 1000;
     width: 100%;
-    height: 3.4rem;
+    height: 2.5rem;
     background-color: rgba(0,0,0,.8);
     backdrop-filter: blur(2rem);
 }
@@ -82,6 +90,196 @@ header {
     padding-top: 18rem;
 }
 
+.resume-section {
+    margin-top: 6rem;
+    padding: 4rem 3rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.resume-section h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    color: #1d1d1f;
+}
+
+.resume-download {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #0071e3;
+    transition: border-bottom 0.3s ease;
+}
+
+.resume-download:hover {
+    border-bottom: 2px solid #0071e3;
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .project {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .neat-image {
+    max-width: 200px; 
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .project-name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-description {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .button {
+    padding: 0.8rem 1.6rem;
+    background-color: #0071e3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: inline-block;
+    text-align: center;
+    margin: 0.5rem 0;
+    white-space: nowrap;
+}
+
+.button + .button {
+    margin-left: 1rem;
+}
+
+.button a {
+    display: block;
+    padding: 0.4rem 0;
+}
+  
+  .button:hover {
+    background-color: #005bb5;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 22rem;
+  }
+
+iframe {
+    margin-top: 3rem;
+    width: 100%;
+    height: 60rem;
+    border: none;
+}
+main .contact-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h1 {
+    text-align: center;
+    padding: 7.2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #1d1d1f;
+  }
+  
+  .contact-container p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #6e6e73;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #1d1d1f;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid #d1d1d6;
+    border-radius: 8px;
+    background-color: #f9f9fa;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #0071e3;
+    background-color: #ffffff;
+  }
+  
+  .submit-button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #0071e3;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .submit-button:hover {
+    background-color: #005bb5;
+  }
+
+  .contact-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 32rem;
+  }
+  
 .title{
     color: #FCF5E5;
     text-align: center;
@@ -100,7 +298,6 @@ header {
     line-height: 2.5;
     letter-spacing: -0.005rem;
 }
-
 .cta {
     text-align: center;
     margin-top: 1.8rem;

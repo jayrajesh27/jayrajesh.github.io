@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head> <title>Jay's Personal portfolio</title> </head>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list nav-list-mobile">
+            <li class="nav-item">
+              <div class="mobile-menu">
+                <span class="line line-top"></span>
+                <span class="line line-bottom"></span>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav-list nav-list-larger">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="resume.html" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+      <h1 class="portfolio-title">Portfolio</h1>
+      <div class="project-container">
+        
+
+        <div class="project">
+          <a href="project1.html">
+            <img src="/Users/jayrajesh/Library/Mobile Documents/com~apple~CloudDocs/Hack4ImpactStarterPack.jpg" alt="Project 1 Image" class="neat-image" />
+          </a>
+          <div class="project-details">
+            <h3 class="project-name">Personal Website</h3>
+            <p class="project-description">
+              This is my first personal website, supplemented by the Hack4Impact Starter Kit! I struggled through the design, attempting to clone Apple's tool bar, 
+              but ended up with a rudimentary 'About Me' site. Thanks!
+            </p>
+            <a href="index.html" class="button">Learn More</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <a href="project2.html">
+            <img src="/Users/jayrajesh/Downloads/WeClassLayout.JPEG" alt="Project 2 Image" class="neat-image" />
+          </a>
+          <div class="project-details">
+            <h3 class="project-name">WeClass</h3>
+            <p class="project-description">
+              Co-Founded WeClass, an EdTech platform currently operating in 10+ Bay Area highschools.
+              Worked with a team of 3 full-stack devs to create a functioning platform, using a combination of Node.js, Amazon 
+              Lightsail, and MySQL. Featured on Business Insider and Yahoo Finance.
+            </p>
+            <a href="https://finance.yahoo.com/news/weclass-debuts-six-bay-area-055000789.html" class="button">Yahoo Finance</a>
+            <a href="https://markets.businessinsider.com/news/stocks/weclass-unveils-solutions-to-bridge-the-gap-understanding-between-teachers-and-students-1032679892" class="button">Business Insider</a>
+          </div>
+        </div>
+    <footer class="footer">
+        © 2024 Jay's World | All Rights Reserved
+      </footer>
   </body>
-  <footer>© 2024 <Jay 101> | All Rights Reserved</footer>
 </html>
+
