@@ -23,10 +23,11 @@ a{
 
 header {
     position: fixed;
+    padding: 1rem;
     top: 0;
     z-index: 1000;
     width: 100%;
-    height: 4.4rem;
+    height: 3.4rem;
     background-color: rgba(0,0,0,.8);
     backdrop-filter: blur(2rem);
 }
@@ -36,7 +37,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 -1rem;
+    margin: 0rem;
+    padding: 0;
+    margin: 0;
     
 }
 
@@ -63,7 +66,7 @@ header {
 }
 
 .about-me{
-    height: 150.2rem;
+    height: 130.2rem;
     margin-top: 4.4rem;
     background: url("/Users/jayrajesh/Library/Mobile Documents/com~apple~CloudDocs/Michigan.jpg");
     background-repeat: repeat;
@@ -141,17 +144,48 @@ header {
     }
     .line {
         width: 100%;
-    height: 3px; /* Make lines thicker for visibility */
+    height: 2px; 
     background-color: #fff;
-    margin: 4px 0; /* Create spacing between the lines */
-    transition: all 0.3s ease; /* Smoother transition */
+    margin: 4px 0; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
     }
     .line-top {
-        margin-top: 3px;
+        margin-top: 2.5rem;
     }
     .line-bottom{
-        margin-top: -4rem;
+        margin-top: -1.98rem;
     }
+
+    .active .line-top{
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform 0.3192s 0.1s cubic-bezier(0.04,0.04,0.12,0.96);
+    }
+
+    .active .line-bottom{
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform 0.3192s 0.1s cubic-bezier(0.04,0.04,0.12,0.96);
+
+    }
+
+    header.active{
+        height: 100%;
+        background-color: #000;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-list-mobile {
+        display: none;
+    }
+
+    .nav-list-larger {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }
 
 .menu-active .nav-list-larger {
@@ -171,5 +205,5 @@ header {
 }
 
 body {
-    padding-top: 4.4rem; /* Ensure content is pushed down to make space for the fixed header */
+    padding-top: 4.4rem; 
 }
